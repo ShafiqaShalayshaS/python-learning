@@ -1,0 +1,98 @@
+'''
+#exercie 5: Sum until Zero
+num = int(input("Enter any number :"))
+total = 0
+#print (total)
+while num != 0:
+    total += num       
+    num = int(input("Enter any number :"))  
+print("Total:",total)   
+
+#exercie 6 : Count poitive and negative numbers
+num = int(input("Enter any number :"))
+count1 = 0
+count2 = 0
+while num != 0:
+    if num > 0:
+        count1 +=1
+    else:
+        count2 +=1   
+    num = int(input("Enter any number :"))  
+print("Count of poitive number is :", count1) 
+print("Count of negative number is :", count2)
+
+#exercie 7 : guess the Secret number
+num = int(input("Enter any number :"))
+secret_no = 124
+while num >= 0 or num < 0:
+    if num > secret_no:
+        print("Too High")
+        num = int(input("Enter any number :"))
+    elif num < secret_no:
+        print("Too Low")
+        num = int(input("Enter any number :"))   
+    else:
+        print("Correct!") 
+        break 
+
+#exercie 8 : number Analyzer
+num = int(input("Enter any number - "))
+num1 = -999
+while num != num1:
+    if num > 0:
+        print("Po sitive")
+        if num%2 ==0:
+            print("Even")
+        else:
+            print("Odd")
+    elif num < 0:
+        print("Negative")
+        if num%2 ==0:
+            print("Even")
+        else:
+            print("Odd")
+    else:
+        print("Zero")
+    num = int(input("Enter any number - ")) 
+'''
+#ExERCISE 9 - ATM Challenge
+old_balance = 10000
+Deposit=0
+Withdraw=0
+Check_balance= 0
+new_balance = old_balance
+print ("1. Deposit")
+print ("2. Withdraw")
+print ("3. Check balance")
+print ("4. Exit")
+opt= int(input("Choose: "))
+while opt <= 4:
+    if opt == 1:
+        opt1 = int(input("Enter amount: "))
+        new_balance = new_balance + opt1
+        #new_balance = Check_balance
+    elif opt == 2:
+        opt2 = int(input("Enter amount: "))
+        if opt2 < new_balance:
+            new_balance = new_balance - opt2
+        else:
+            print("Withdrawal amount higher than actual balance")
+    elif opt == 3:
+        print("Balance: ",new_balance)
+    elif opt == 4:
+        print("Program ended")
+        break
+    print ("1. Deposit")
+    print ("2. Withdraw")
+    print ("3. Check balance")
+    print ("4. Exit")
+    opt= int(input("Choose: "))
+
+
+
+
+
+
+ 
+
+
